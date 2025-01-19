@@ -135,12 +135,12 @@
 
 
 - **Cascade DELETE :**
-    - Explication: lorsqu'une ligne est supprimée dans une table parent, toutes les lignes liées dans les tables enfants sont automatiquement supprimées.
-    - Intérêt : maintient la cohérence des données en évitant les références orrphelines.
+    -**Explication :** lorsqu'une ligne est supprimée dans une table parent, toutes les lignes liées dans les tables enfants sont automatiquement supprimées.
+    - **Intérêt :** maintient la cohérence des données en évitant les références orrphelines.
        
 - **Cascade UPDATE :**
-    - Explication: si une clé primaire dans une table parent est mise à jour, les clés etrangères correspondantes dans les tables enfants sont automatiquement mises à jour.
-    - Intérêt: Préserve l'integrité des rélations sans besoin d'intervention manuelle. 
+    - **Explication :** si une clé primaire dans une table parent est mise à jour, les clés etrangères correspondantes dans les tables enfants sont automatiquement mises à jour.
+    - **Intérêt :** Préserve l'integrité des rélations sans besoin d'intervention manuelle. 
 
 
 
