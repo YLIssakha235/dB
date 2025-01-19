@@ -218,4 +218,3 @@
 
 - **Incident grave :** Restaurer depuis le backup et rejouer le journal.
 
-"""
