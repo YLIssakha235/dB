@@ -47,8 +47,7 @@
 
   - **Fichier principal :** Adresse 1001 → Dupont, Pierre, 1999-09-09.
 
-  - Pour accéder à la clé 001, on consulte l’index pour trouver Adresse 1001, puis on lit l’enregistrement.
-
+  
 
 
 ---
