@@ -1,23 +1,14 @@
 # Questions sur les Bases de Données
 
 
-
 ## 1) Différences entre fichiers séquentiels (TEXT) et fichiers à accès direct (RANDOM)
 
-
-
 | **Caractéristique**            | **Fichier séquentiel (TEXT)** | **Fichier à accès direct (RANDOM)** |
-
 |--------------------------------|-------------------------------|--------------------------------------|
-
 | **Accès**                      | Séquentiel                   | Direct                               |
-
-| **Vitesse d’accès**            | Lent (pour données éloignées)| Rapide                               |
-
+| **Vitesse d’accès**            | Lent (pour données éloignées) | Rapide                               |
 | **Organisation**               | Ordre fixe                   | Indexée ou positionnée               |
-
 | **Usage**                      | Logs, Rapports               | Bases de données, gestion d’enregistrements |
-
 | **Simplicité d’implémentation**| Simple                       | Plus complexe                        |
 
 
@@ -152,21 +143,16 @@
 
 ---
 
-
-
 ## 7) Problèmes dans les bases de données
 
-
-
 | **Problème**               | **Risque majeur**                         | **Solution**                     | **Gestion par le serveur**                         |
-
 |----------------------------|------------------------------------------|----------------------------------|---------------------------------------------------|
-
 | **Mise à jour perdue**     | Modification écrasée                     | Verrouillage pour empêcher modifications simultanées | Verrou exclusif, isolation élevée. |
-
 | **Accès à données instables** | Travail sur des données annulées         | Isolation élevée (Repeatable Read, Serializable) | Verrou lecture/écriture, bloque accès non validé. |
-
 | **Incohérence statique**    | Données incohérentes entre relations     | Transactions atomiques, isolation stricte         | Verrouillage des ensembles liés. |
+
+
+
 
 
 
