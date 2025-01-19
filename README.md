@@ -145,6 +145,24 @@
 
 ## 7) Problèmes dans les bases de données
 
+
+
+### Mise à jour perdue
+- lorsque deux utilisateurs chargent la base de données en même temps et qu'ils opèrent des operations chacun de son coté, lors de la mise à jour de la base de données, la première update sera perdue car la seconde l'écrasse.
+  
+![Description de l'image 1](Image1.jpg)
+
+### Accès à des données instables
+- Lorsqu’une personne modifie une donnée et qu’un autre utilisateur récupère cet update, si la personne annule sa modification durant les opérations du second utilisateur, l’annulation ne sera pas retenue mais uniquement le dernier update.
+![Description de l'image 2](Image2.jpg)
+
+### Incohérence statique 
+- commence la lecture de la database avant que les  données soient modifiées et fini la lecture après la modification ce qui engendre une faute sur le programme qui utilise les données.
+  
+![Description de l'image 3](Image3.jpg)
+
+
+
 | **Problème**               | **Risque majeur**                         | **Solution**                     | **Gestion par le serveur**                         |
 |----------------------------|------------------------------------------|----------------------------------|---------------------------------------------------|
 | **Mise à jour perdue**     | Modification écrasée                     | Verrouillage pour empêcher modifications simultanées | Verrou exclusif, isolation élevée. |
